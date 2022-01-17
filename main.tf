@@ -1,7 +1,7 @@
 provider "aws" {
   region = "eu-central-1"
 }
-
+/*
 terraform {
   required_providers {
     aws = {
@@ -9,7 +9,13 @@ terraform {
       version = "~> 3.0"
     }
   }
+  backend "s3" {
+    bucket = "test-circleci-tf-state"
+    key    = "platform.tfstate"
+    region = "eu-central-1"
+  }
 }
+*/
 
 # https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/instance
 resource "aws_instance" "ubuntu" {

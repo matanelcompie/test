@@ -1,7 +1,7 @@
 provider "aws" {
   region = "eu-central-1"
 }
-/*
+
 terraform {
   required_providers {
     aws = {
@@ -15,7 +15,7 @@ terraform {
     region = "eu-central-1"
   }
 }
-*/
+
 
 # https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/instance
 resource "aws_instance" "ubuntu" {

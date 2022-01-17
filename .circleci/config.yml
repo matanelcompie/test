@@ -8,7 +8,7 @@ workflows:
     jobs:
     - terraform/validate:
         checkout: true
-        context: terraform
+        context: terraformS
     - terraform/plan:
         checkout: true
         context: terraform

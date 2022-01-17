@@ -10,7 +10,7 @@ terraform {
     }
   }
   backend "s3" {
-    bucket = "devopsbyexample-tf-state"
+    bucket = "test-circleci-tf-state"
     key    = "platform.tfstate"
     region = "eu-central-1"
   }
